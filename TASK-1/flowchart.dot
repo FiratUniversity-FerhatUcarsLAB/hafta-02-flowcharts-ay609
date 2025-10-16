@@ -1,0 +1,32 @@
+digraph ATM_Para_Cekme {
+    rankdir=LR;
+    node [shape=rectangle, style=rounded, fontname="Arial"];
+
+    Start [label="Kartı Tak"];
+    Pin [label="PIN Kodunu Gir"];
+    PinCheck [label="PIN Doğru mu?"];
+    InvalidPin [label="Hatalı PIN"];
+    Denied [label="Kart İptal / İşlem Sonu"];
+    Select [label="İşlem Seç (Para Çekme)"];
+    Amount [label="Tutar Gir"];
+    Balance [label="Bakiye Yeterli mi?"];
+    BankCheck [label="Banka Onayı"];
+    Approved [label="Onaylandı"];
+    Dispense [label="Parayı Ver"];
+    End [label="Kartı ve Parayı Al / İşlem Sonu"];
+
+    Start -> Pin;
+    Pin -> PinCheck;
+    PinCheck -> InvalidPin [label="Hayır"];
+    InvalidPin -> Denied [label="3 Kez Hatalı"];
+    InvalidPin -> Pin [label="Tekrar Dene"];
+    PinCheck -> Select [label="Evet"];
+    Select -> Amount;
+    Amount -> Balance;
+    Balance -> BankCheck [label="Yeterli"];
+    Balance -> Amount [label="Yetersiz"];
+    BankCheck -> Approved [label="Onay"];
+    BankCheck -> End [label="Reddedildi"];
+    Approved -> Dispense;
+    Dispense -> End;
+}
