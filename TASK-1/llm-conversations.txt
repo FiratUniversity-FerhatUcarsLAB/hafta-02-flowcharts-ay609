@@ -1,0 +1,35 @@
+Bana ATM'den para çekme şemasını çizmek için yardımcı ol. Neler yazabileceğimi, neler yapabileceğimi  söyle ve işte biraz yardımcı ol.
+ChatGPT:
+Harika 👍 Başlayalım!
+Bir ATM’den para çekme şeması (flowchart) çizmek istiyorsan, amacın şu:
+“Kullanıcının ATM’de para çekme işlemini adım adım görsel olarak göstermek.”
+Aşağıda adım adım nasıl çizeceğini, hangi şekilleri kullanacağını ve neler yazabileceğini anlattım 👇
+🧩 1. Başlangıç (Start)
+Şekil: Oval
+İçerik: “Kartı Tak”
+Bu, işlemin başladığı noktadır.
+🔐 2. PIN Doğrulama Aşaması
+Şekil: Dikdörtgen → “PIN Kodunu Gir”
+Ardından karar (decision) şekli (baklava) → “PIN Doğru mu?”
+Evet → İşlem seçimine geç
+Hayır → “Tekrar Dene” veya “Kart İptal” adımlarına yönlen
+💰 3. İşlem Seçimi
+Şekil: Dikdörtgen
+İçerik: “İşlem Seç (Para Çekme)”
+🧮 4. Tutar ve Bakiye Kontrolü
+Şekil: Dikdörtgen → “Tutar Gir”
+Ardından karar şekli → “Bakiye Yeterli mi?”
+Evet → “Banka Onayı” adımına git
+Hayır → “Yeni Tutar Gir veya İşlemi İptal Et”
+🏦 5. Banka Onayı
+Şekil: Dikdörtgen → “Banka Onayı”
+Onaylandı → “Parayı Ver”
+Reddedildi → “İşlem Sonu”
+💸 6. Para Verme ve Makbuz
+Şekil: Dikdörtgen → “Parayı Ver”
+Karar şekli: “Makbuz İster misiniz?”
+Evet → “Makbuz Yazdır”
+Hayır → İşlemi bitir
+🔚 7. Bitiş (End)
+Şekil: Oval
+İçerik: “Kartı ve Parayı Al –
