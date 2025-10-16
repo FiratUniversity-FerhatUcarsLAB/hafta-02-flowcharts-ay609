@@ -1,4 +1,8 @@
-İsim - Soy isim 
-Öğrenci No:
-
-sistemin kısa açıklaması (maks. 5-6 satır)
+İsim - Soy isim 250541614
+Öğrenci No:aychaalebrahım
+Bu şema, ATM’den para çekme sürecinin mantıksal akışını gösterir.
+İlk olarak kullanıcı kartını takar ve PIN kodunu girer, sistem kodun doğruluğunu kontrol eder.
+PIN üç kez yanlış girilirse kart iptal edilir ve işlem sona erer.
+Doğru PIN girildiğinde kullanıcı para çekme işlemini seçer ve çekmek istediği tutarı belirtir.
+ATM, bakiye yeterliliğini ve banka onayını kontrol eder; onaylanırsa para verilir.
+Son adımda kullanıcı makbuz isteyip istemediğini seçer ve işlem kart ve paranın teslimiyle tamamlanır
